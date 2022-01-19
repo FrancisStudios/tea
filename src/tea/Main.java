@@ -1,9 +1,12 @@
 package tea;
-import modules.fileOperations;
+import modules.preparationFunctions;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(fileOperations.readFile());
+        /*
+        CHECKING CONSOLE ARGS IF THEY FIT ALL CONSTRAINTS
+         */
+        preparationFunctions.checkIfConsoleArgumentsAreValid(args);
     }
 }

@@ -10,7 +10,9 @@ public class preparationFunctions {
                         args[0] :
                         content._noFileContent;
 
-        String __inputExtension = getExtensionOfInputFile(args);
+        String __inputExtension = __inputFile != content._noFileContent ?
+                getExtensionOfInputFile(args) :
+                error.generalError;
 
         /*
         KILL PROGRAM WITH ERROR IF NO INPUT FILE, OR EXTENSION NOT MATCH

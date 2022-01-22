@@ -17,7 +17,7 @@ public class fileOperations {
 
         } catch (Exception e){
             e.printStackTrace();
-            return e.toString();
+            return error.generalError;
         }
 
     }

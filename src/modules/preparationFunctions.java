@@ -1,6 +1,5 @@
 package modules;
 import content.content;
-
 import java.util.Arrays;
 
 public class preparationFunctions {

@@ -1,6 +1,7 @@
 package tealang;
 import tealang.logicControllers.*;
 import tealang.commands.*;
+import content.*;
 
 public class compiler {
     /*
@@ -8,7 +9,12 @@ public class compiler {
      */
     public static void compile(String __fileContents){
         if(start.start(__fileContents)){
-            System.out.println(statusController.isStarted);
+            /*
+            here I should implement some logic with reading code
+             */
+            System.out.print(content._runtimeStarted);
         };
+
+        System.out.print(content._runtimeFinished);
     }
 }
